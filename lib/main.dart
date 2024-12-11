@@ -1,3 +1,4 @@
+import 'package:atw/feature/auth/login/presentation/views/login_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: LoginView(),
     );
   }
 }
