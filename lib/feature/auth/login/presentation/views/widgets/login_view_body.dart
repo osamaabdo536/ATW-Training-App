@@ -1,6 +1,8 @@
 import 'package:atw/feature/auth/login/presentation/views/widgets/password_validation.dart';
 import 'package:atw/feature/auth/login/presentation/views/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
+import '../../../../../../constants.dart';
+import 'custom_elevated_button.dart';
 import 'custom_text_form_filed.dart';
 import 'email_validation.dart';
 
@@ -24,7 +26,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
         body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 30),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const TextWidget(
                   text: "Let's Sign you in",
@@ -81,6 +83,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   ],
                 ),
               ),
+              const CustomElevatedButton(),
             ],
           ),
         ),
@@ -88,3 +91,4 @@ class _LoginViewBodyState extends State<LoginViewBody> {
     );
   }
 }
+
