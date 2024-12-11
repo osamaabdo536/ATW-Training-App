@@ -45,6 +45,9 @@ class CustomTextFormFiled extends StatelessWidget {
           fontSize: 19,
         ),
       ),
+      style: const TextStyle(
+        fontSize: 20
+      ),
       keyboardType: keyBoardType,
       obscureText: isObscure,
       validator: validator,
