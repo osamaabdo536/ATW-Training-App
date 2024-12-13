@@ -7,12 +7,14 @@ import '../../../../../../constants.dart';
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({
     super.key,
+    required this.onPressed
   });
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: primaryColor,
         padding: const EdgeInsets.all(15),
